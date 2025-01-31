@@ -6,7 +6,7 @@ INCLUDE=include
 SRC=src
 BIN=build
 
-all: main.o Point.o Forme.o Rectangle.o Cerle.o
+all: main.o Point.o Forme.o Rectangle.o Cerle.o Carre.o
 	@mkdir -p ${BIN}
 	${CC} ${FLAGS} ${BIN}/*.o -o ${EXE}
 
@@ -29,6 +29,10 @@ Rectangle.o : ${SRC}/Rectangle.cpp
 Cercle.o : ${SRC}/Cercle.cpp
 	@mkdir -p ${BIN}
 	${CC} ${FLAGS} -I $(shell pwd)/${INCLUDE} ${SRC}/Cercle.cpp -o ${BIN}/Cercle.o -c
+
+Carre.o : ${SRC}/Carre.cpp
+	@mkdir -p ${BIN}
+	${CC} ${FLAGS} -I $(shell pwd)/${INCLUDE} ${SRC}/Carre.cpp -o ${BIN}/Carre.o -c
 
 
 clean :
