@@ -20,3 +20,5 @@ public:
     friend std::ostream &operator<<(std::ostream &os, const Point &p);
     void operator+=(const Point &a);
 };
+
+std::ostream &operator<<(std::ostream &os, const Point &p);

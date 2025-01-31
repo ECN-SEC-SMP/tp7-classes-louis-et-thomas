@@ -1,7 +1,7 @@
 #pragma once 
 #include "Forme.h"
 
-class Cercle : Forme
+class Cercle : public Forme
 {
 private:
     double rayon;

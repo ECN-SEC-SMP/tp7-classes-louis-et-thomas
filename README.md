@@ -156,3 +156,5 @@ Point(22,15)
 
 ## Formes Géométriques Abstraites
 
+L'objectif ici est de créer une class abstraite standardisant les différentes formes.
+

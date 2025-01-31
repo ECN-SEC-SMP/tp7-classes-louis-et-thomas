@@ -15,11 +15,6 @@ Forme::Forme()
     this->center = Point();
 }
 
-Forme::~Forme()
-{
-    
-}
-
 std::ostream &operator<<(std::ostream &os, const Forme &f)
 {
     return f.show(os);

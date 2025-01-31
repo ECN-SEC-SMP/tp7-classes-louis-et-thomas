@@ -6,7 +6,7 @@ INCLUDE=include
 SRC=src
 BIN=build
 
-all: main.o Point.o Forme.o Rectangle.o Cerle.o Carre.o
+all: main.o Point.o Forme.o Rectangle.o Cercle.o 
 	@mkdir -p ${BIN}
 	${CC} ${FLAGS} ${BIN}/*.o -o ${EXE}
 
