@@ -7,12 +7,14 @@ private:
     Point center;
     virtual std::ostream &show(std::ostream &os) const;
 public:     
+    Forme();
+    Forme(double xCenter, double yCenter);
     Forme(const Point a);
     ~Forme();
     friend std::ostream &operator<<(std::ostream &os, const Forme &f);
     void operator+=(const Forme &f);
-    virtual int perimetre();
-    virtual int surface();
+    virtual double perimetre();
+    virtual double surface();
 };
 
 std::ostream &operator<<(std::ostream &os, const Forme &f);

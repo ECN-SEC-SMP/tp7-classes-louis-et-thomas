@@ -5,6 +5,16 @@ Forme::Forme(const Point a)
     this->center = a;
 }
 
+Forme::Forme(double xCenter, double yCenter)
+{
+    this->center = Point(xCenter, yCenter);
+}
+
+Forme::Forme()
+{
+    this->center = Point();
+}
+
 Forme::~Forme()
 {
     
