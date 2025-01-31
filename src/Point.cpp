@@ -53,3 +53,15 @@ void Point::setY(double new_y)
 {
     this->y = new_y;
 }
+
+std::ostream& operator<<(std::ostream& os, const Point &p)
+{
+    os << "Point(" << p.x << "," << p.y << ")";
+    return os;
+}
+
+void Point::operator+=(const Point &a)
+{
+    this->x += a.x;
+    this->y += a.y;
+}
