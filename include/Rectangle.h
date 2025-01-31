@@ -8,10 +8,10 @@ private:
     double lenght;
     double height;
     virtual std::ostream &show(std::ostream &os) const;
-public:
+public:    
+    Rectangle();
     Rectangle(double xCenter, double yCenter, double lenght, double height);
     Rectangle(Point center, double lenght, double height);
-    Rectangle();
     Rectangle(double lenght, double height);
     Rectangle(const Rectangle &f);
     ~Rectangle();

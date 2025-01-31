@@ -3,8 +3,9 @@
 
 class Forme
 {
-private:
+protected:
     Point center;
+private:
     virtual std::ostream &show(std::ostream &os) const;
 public:     
     Forme();
